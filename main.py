@@ -16,6 +16,8 @@ while True:
     if frame is None:
         break
 
+    frame = cv2.flip(frame,1)
+    
     frame = detector.process(frame)
 
     cv2.imshow("AI Eye Controlled Application System", frame)
